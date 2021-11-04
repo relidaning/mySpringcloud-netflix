@@ -1,14 +1,13 @@
-package com.lidaning.eureka;
+package com.lidaning.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@EnableEurekaServer
 @SpringBootApplication
-public class EurekaApplication {
+public class DemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaApplication.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
 
 }
