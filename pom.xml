@@ -8,6 +8,11 @@
     <artifactId>mySpringcloud-netflix</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>mySpringcloud-netflix</name>
+    <modules>
+        <module>eureka</module>
+        <module>config</module>
+        <module>demo</module>
+    </modules>
     <packaging>pom</packaging>
     <description>It's a springcloud application which is base on netflix</description>
 
@@ -118,5 +123,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    
+
 </project>
