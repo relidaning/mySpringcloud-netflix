@@ -12,6 +12,7 @@
         <module>eureka</module>
         <module>config</module>
         <module>demo</module>
+        <module>admin</module>
     </modules>
     <packaging>pom</packaging>
     <description>It's a springcloud application which is base on netflix</description>
