@@ -1,25 +1,25 @@
 
 spring:
-  profiles:
-    active: dev
+#  profiles:
+#    active: dev
   cloud:
     config:
-      uri: http://192.168.178.128:8888/
-  datasource:
-    url: jdbc:oracle:thin:@192.168.178.128:1521/xe
-    username: lidaning
-    password: lidaning
-  redis:
-    host: 192.168.178.128
-    port: 6379
-    password:
-    pool:
-      max-active: -1
-      max-wait: -1
+      uri: http://localhost:8888/
+#  datasource:
+#    url: jdbc:oracle:thin:@192.168.178.128:1521/xe
+#    username: lidaning
+#    password: lidaning
+#  redis:
+#    host: 192.168.178.128
+#    port: 6379
+#    password:
+#    pool:
+#      max-active: -1
+#      max-wait: -1
 
 eureka:
   instance:
-    hostname: 192.168.178.128
+    hostname: localhost
     prefer-ip-address: true
   client:
     service-url:
@@ -33,7 +33,6 @@ management:
   endpoint:
     health:
       show_details: always
-
 
 jwt:
   HEADER: Authorization

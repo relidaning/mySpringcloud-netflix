@@ -3,8 +3,6 @@ server:
 spring:
   application:
     name: admin
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
+  cloud:
+    config:
+      uri: http://localhost:8888/
