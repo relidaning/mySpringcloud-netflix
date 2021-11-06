@@ -22,7 +22,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <spring-cloud.version>Finchley.SR2</spring-cloud.version>
         <spring-cloud.netflix.version>2.0.2.RELEASE</spring-cloud.netflix.version>
-        <spring-cloud.config.version>2.0.2.RELEASE</spring-cloud.config.version>
+        <spring-cloud.config.version>2.0.4.RELEASE</spring-cloud.config.version>
         <spring-boot.web>2.0.6.RELEASE</spring-boot.web>
         <spring-boot.admin>2.0.4</spring-boot.admin>
         <spring-boot.actuator>2.0.4.RELEASE</spring-boot.actuator>
