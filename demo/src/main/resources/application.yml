@@ -7,3 +7,7 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888/
+
+local:
+  mail: lidaning@163.com
+  nickName: lidaning

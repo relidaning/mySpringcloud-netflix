@@ -19,4 +19,4 @@ spring:
 eureka:
   client:
     fetchRegistry: false
-#    registerWithEureka: false
+    registerWithEureka: false
