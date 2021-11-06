@@ -11,3 +11,7 @@ spring:
 local:
   mail: lidaning@163.com
   nickName: lidaning
+
+info:
+  mail: shakeit@126.com
+  nickName: shakeit
