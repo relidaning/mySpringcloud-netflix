@@ -8,11 +8,11 @@ spring:
     config:
       server:
         git:
-          default-label: main
           uri: https://github.com/relidaning/mySpringcloud-netflix.git
+          default-label: main
           search-paths: configuration
           skip-ssl-validation: true
-          basedir: target/config
+          basedir: target/configuration
 #          username: 453882101@qq.com
 #          password: eqbq0723@git
 
@@ -20,3 +20,8 @@ eureka:
   client:
     fetchRegistry: false
     registerWithEureka: false
+
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'debug'
