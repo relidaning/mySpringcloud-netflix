@@ -8,9 +8,9 @@ spring:
     config:
       server:
         git:
-          default-label: master
-          uri: https://github.com/relidaning/myConfiguration.git
-          search-paths:
+          default-label: main
+          uri: https://github.com/relidaning/mySpringcloud-netflix.git
+          search-paths: configuration
           skip-ssl-validation: true
           basedir: target/config
 #          username: 453882101@qq.com
