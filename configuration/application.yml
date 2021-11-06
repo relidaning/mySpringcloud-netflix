@@ -42,3 +42,7 @@ jwt:
 
 zuul:
   sensitive-headers: Set-Cookie,Cookie,Host,Connection,Content-Length,Content-Encoding,Server,Transfer-Encoding,X-Application-Context
+
+info:
+  mail: shake@google.com
+  nickName: shake
