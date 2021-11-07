@@ -6,7 +6,7 @@ spring:
     name: demo
   cloud:
     config:
-      uri: http://localhost:8888/
+      uri: http://82.157.147.8:8888/
 
 local:
   mail: lidaning@163.com

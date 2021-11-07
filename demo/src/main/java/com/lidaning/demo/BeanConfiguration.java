@@ -2,6 +2,8 @@ package com.lidaning.demo;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +14,8 @@ import java.util.Properties;
 
 @Configuration
 public class BeanConfiguration {
+
+    private Logger log = LoggerFactory.getLogger(this.getClass());
 
     @Bean
     public YamlConfigurerUtil ymlConfigurerUtil() {
@@ -29,7 +33,7 @@ public class BeanConfiguration {
             active = properties.getProperty("spring.profiles.active");
         }
         if (StringUtils.isEmpty(active)) {
-            System.out.println("未找到配置文件！");
+            log.error("未找到配置文件！");
         } else {
             //判断当前配置是什么环境
             if ("dev".equals(active)) {
