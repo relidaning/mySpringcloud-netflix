@@ -13,4 +13,4 @@ zuul:
     demo:
       path: /demo/**
       url: 82.157.147.8:8080
-  ignored-services: admin, eureka6
+  ignored-services: admin, eureka
