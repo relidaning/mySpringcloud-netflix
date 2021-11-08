@@ -11,3 +11,7 @@
 ## Integrate config
 
 集成配置中心,像上述的服务发现的配置,就可以统一通过配置中心自动加载
+
+## 集成springboot admin管理中心
+
+## 集成zuul网关服务

@@ -12,6 +12,11 @@ local:
   mail: lidaning@163.com
   nickName: lidaning
 
-info:
-  mail: shakeit@126.com
-  nickName: shakeit
+eureka:
+  instance:
+    hostname: 82.157.147.8
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka
+    fetch-registry: false
