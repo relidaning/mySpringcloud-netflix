@@ -14,8 +14,19 @@ public class ReadConfigFromGit {
     @Value("${info.nickName}")
     private String nickName;
 
+    @Value("${local.mail}")
+    private String lmail;
+    @Value("${local.nickName}")
+    private String lnickName;
+
     @GetMapping("/getInfo")
     public String getInfo(){
         return "mail:"+this.mail+", nickName:"+this.nickName;
     }
+
+    @GetMapping("/readLocalInfo")
+    public String readLocalInfo(){
+        return "mail:"+this.lmail+", nickName:"+this.lnickName;
+    }
+
 }

@@ -1,8 +1,0 @@
-server:
-  port: 9010
-spring:
-  application:
-    name: admin
-  cloud:
-    config:
-      uri: http://82.157.147.8:8888/

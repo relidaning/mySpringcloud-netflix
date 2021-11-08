@@ -1,16 +1,6 @@
-server:
-  port: 8070
-
-spring:
-  application:
-    name: zuul
-  cloud:
-    config:
-      uri: http://82.157.147.8:8888/
-
-zuul:
-  routes:
-    demo:
-      path: /demo/**
-      url: 82.157.147.8:8080
-  ignored-services: admin, eureka
+info:
+  mail: shake@zuul.com
+  nickName: shake
+local:
+  mail: shake@zuulLocal.com
+  nickName: shakeLocal
