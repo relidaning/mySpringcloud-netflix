@@ -1,6 +1,6 @@
 mySpringcloud-netflix:
   server:
-    ip: 82.157.147.8
+    ip: 127.0.0.1
 
 spring:
   #  profiles:
