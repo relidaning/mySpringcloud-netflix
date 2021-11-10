@@ -24,7 +24,7 @@ spring:
 eureka:
   instance:
     hostname: ${mySpringcloud-netflix.server.ip}
-#    prefer-ip-address: true
+    prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka
@@ -51,3 +51,9 @@ jwt:
 info:
   mail: shake@config-app.yml
   nickName: shake
+
+logging:
+  file: ./log/${spring.application.name}.log
+  pattern:
+    file: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID}){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
+
