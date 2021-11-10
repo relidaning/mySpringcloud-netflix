@@ -2,12 +2,12 @@ mySpringcloud-netflix:
   server:
     ip: 127.0.0.1
 
-spring:
+#spring:
   #  profiles:
   #    active: dev
-  cloud:
-    config:
-      uri: http://${mySpringcloud-netflix.server.ip}:8888/
+#  cloud:
+#    config:
+#      uri: http://${mySpringcloud-netflix.server.ip}:8888/
 #  datasource:
 #    url: jdbc:oracle:thin:@192.168.178.128:1521/xe
 #    username: lidaning
