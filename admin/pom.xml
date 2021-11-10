@@ -6,7 +6,7 @@
         <groupId>com.lidaning</groupId>
         <artifactId>mySpringcloud-netflix</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
     <groupId>com.lidaning</groupId>
     <artifactId>admin</artifactId>
