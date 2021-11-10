@@ -2,10 +2,11 @@ mySpringcloud-netflix:
   server:
     ip: 127.0.0.1
 
-#spring:
+spring:
   #  profiles:
   #    active: dev
-#  cloud:
+  cloud:
+    inetutils.preferred-networks: ${mySpringcloud-netflix.server.ip}
 #    config:
 #      uri: http://${mySpringcloud-netflix.server.ip}:8888/
 #  datasource:
