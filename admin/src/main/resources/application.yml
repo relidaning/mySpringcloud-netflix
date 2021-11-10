@@ -1,0 +1,7 @@
+logging:
+  level:
+    de:
+      codecentric:
+        boot:
+          admin:
+            client: DEBUG

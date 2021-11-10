@@ -23,7 +23,7 @@ mySpringcloud-netflix:
 eureka:
   instance:
     hostname: ${mySpringcloud-netflix.server.ip}
-    prefer-ip-address: true
+#    prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka
