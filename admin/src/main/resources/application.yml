@@ -5,3 +5,19 @@ logging:
         boot:
           admin:
             client: DEBUG
+            server: debug
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show_details: always

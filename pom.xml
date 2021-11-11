@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.6.RELEASE</version>
+        <version>2.0.2.RELEASE</version>
     </parent>
     <groupId>com.lidaning</groupId>
     <artifactId>mySpringcloud-netflix</artifactId>
@@ -28,10 +28,10 @@
         <spring-cloud.version>Finchley.SR2</spring-cloud.version>
         <spring-cloud.netflix.version>2.0.2.RELEASE</spring-cloud.netflix.version>
         <spring-cloud.zuul.version>2.0.2.RELEASE</spring-cloud.zuul.version>
-        <spring-cloud.config.version>2.0.4.RELEASE</spring-cloud.config.version>
-        <spring-boot.web>2.0.6.RELEASE</spring-boot.web>
-        <spring-boot.admin>2.0.4</spring-boot.admin>
-        <spring-boot.actuator>2.0.4.RELEASE</spring-boot.actuator>
+        <spring-cloud.config.version>2.0.2.RELEASE</spring-cloud.config.version>
+        <spring-boot.web>2.0.2.RELEASE</spring-boot.web>
+        <spring-boot.admin>2.0.2</spring-boot.admin>
+        <spring-boot.actuator>2.0.2.RELEASE</spring-boot.actuator>
     </properties>
 
     <dependencyManagement>
@@ -151,6 +151,12 @@
             </dependency>
 
             <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server-ui</artifactId>
+                <version>${spring-boot.admin}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
                 <version>${spring-cloud.zuul.version}</version>
@@ -166,5 +172,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
